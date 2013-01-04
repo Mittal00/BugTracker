@@ -1,0 +1,23 @@
+.brand.image{padding: 0;font-weight: bold;font-size: 30px;   margin: 10px 0 0;}
+.container.middleContain {padding: 2% 0% 0% ;min-height: 595px;}
+.container.middleContainLogin {padding: 9% 0% 0% ;min-height: 595px;}
+.control-group.forgot,.navbar.forgot{margin:0;}
+form{margin: 0;padding:0;}
+.span3.apply{margin: 0 -4%;}
+.middleNav{margin-top: 48px;}
+.subnav {background-color: #EEEEEE;background-image: -moz-linear-gradient(center top , #F5F5F5 0%, #EEEEEE 100%);background-repeat: repeat-x;border-radius: 4px 4px 4px 4px;height: 36px;width: 100%;}
+.tableItem{ border:none;border-radius: 0px;box-shadow: 0px}
+.well.newAccount{ border-bottom: medium none;border-radius: 0 0 0 0;box-shadow: none;margin: 0;}
+#footer{padding: 0}
+@media (min-width: 768px) and (max-width: 979px) { 
+	.middleNav,.navbar-fixed-top{margin: 0}
+	.span3.apply{margin: 0;}
+}
+@media (max-width: 767px) { 
+	.middleNav,.navbar-fixed-top{margin: 0}
+   	 body{padding: 0}
+    .subnav {position: static;top: auto;z-index: auto;width: auto;height: auto;background-color:white;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+	.subnav .nav > li {float: none;}
+	.subnav .nav > li:first-child > a, .subnav .nav > li:first-child > a:hover {-webkit-border-radius: 4px 4px 0 0;-moz-border-radius: 4px 4px 0 0;border-radius: 4px 4px 0 0;}
+ 	.span3.apply{margin: 0;}
+ }

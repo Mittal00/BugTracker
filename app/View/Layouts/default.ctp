@@ -16,46 +16,58 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php echo "Anktech Softwares" ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
-
+		echo $this->Html->css('bootstrap-override');
+		echo $this->Html->css('bootstrap-responsive');
+		echo $this->Html->css('bootstrap.min');
+		echo $this->Html->css('bootswatch.less');
+		echo $this->Html->script('bootstrap.js');
+		echo $this->Html->script('html-5.js');
+		echo $this->Html->script('jquery.js');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
 </head>
 <body>
+	<header>
+        <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <img src="../app/webroot/img/logo.png" class="brand image"/>
+              <a class="brand image" href="#">Bug Tracker</a>
+            </div>
+          </div>
+        </div>
+      </header>
 	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
 		<div id="content">
-
 			<?php echo $this->Session->flash(); ?>
-
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
-</body>
+	<footer id="footer" class="navbar-inner">
+        <div class="row">
+          <div class="span9 offset1">
+            <div class="container">
+              <h5>All Right Reserved
+              &#169 2012 Anktech Softwares Pvt.Ltd.</h5>
+            </div>
+          </div>
+          <div class="span2">
+          </div>
+        </div>
+      </footer>
+	</body>
 </html>
